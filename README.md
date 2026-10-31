@@ -1,60 +1,82 @@
-Screen Time and Mental Wellness
+**Screen Time and Mental Wellness**
 
-About the Project
+**Project Overview**
 
-I wanted to explore the relationship between technology use and mental well-being. We spend a lot of time on our phones and computers, but I was curious about how screen time might relate to other aspects of our daily lives, particularly sleep and mental wellness.
+This project explores the relationship between technology use and mental well-being, with particular attention to screen time, sleep habits, and other lifestyle factors.
 
-For this project, I used Python to analyze a dataset containing information about screen time, sleep habits, physical activity, social interaction, and mental wellness. I also experimented with machine learning models to see how well these variables could predict mental wellness scores.
+I was interested in understanding how everyday technology use might be associated with different aspects of our lives. To investigate this, I worked with a dataset containing information about screen time, sleep duration, sleep quality, physical activity, social interaction, and mental wellness.
 
-This project gave me an opportunity to apply what I had been learning about Python, statistics, data visualization, and machine learning to a topic that interests me.
+Using Python, I performed exploratory data analysis, statistical analysis, data visualization, and machine learning. The project also provided an opportunity to apply concepts I had been learning in programming, statistics, and data science to a topic that connects with my interest in psychology.
 
-What I Did
+**Objectives**
 
-Throughout the project, I worked on several aspects of the data science process:
+The main objectives of this project were to:
 
-* Data analysis: Explored the dataset to understand the variables and identify patterns.
-* Data visualization: Created visualizations to make relationships between variables easier to examine.
-* Statistical analysis: Used linear regression to investigate relationships between screen time, sleep, and mental wellness.
-* Machine learning: Trained and compared linear regression and random forest models to predict mental wellness scores.
-* Model evaluation: Compared model performance using metrics such as R², mean absolute error (MAE), and root mean squared error (RMSE).
+* Examine the relationship between screen time and mental wellness.
+* Investigate how screen time relates to sleep duration.
+* Explore the relationships between lifestyle factors and mental wellness.
+* Develop and compare machine learning models for predicting mental wellness scores.
+* Evaluate the results and consider the limitations of the analysis.
 
-Tools and Technologies
+**Methodology**
 
-* Python
-* pandas
-* NumPy
-* Matplotlib
-* scikit-learn
-* Statistical analysis and machine learning
+The project followed several stages of the data science workflow.
 
-Update this list to match the libraries you actually used.
+**1. Data Exploration and Cleaning**
 
-What I Found
+Examined the dataset, reviewed its variables, and prepared the data for analysis. This included investigating the distributions of individual variables and identifying patterns that could be explored further.
 
-One part of the project was examining the relationship between screen time and mental wellness scores using linear regression. In my analysis, the model showed a negative association between the two variables.
+**2. Exploratory Data Analysis and Visualization**
 
-I also explored the relationship between screen time and sleep duration. This analysis showed a weaker relationship than the one between screen time and mental wellness in the dataset.
+Used statistical summaries and visualizations to examine relationships among screen time, sleep habits, physical activity, social interaction, and mental wellness.
 
-For the prediction task, I compared linear regression with a random forest model. Comparing their performance helped me understand that choosing a model involves more than simply using a more complex algorithm.
+**3. Statistical Analysis**
 
-These results describe patterns in the dataset I analyzed. They do not establish that screen time causes changes in mental wellness or sleep.
+Applied linear regression to investigate the relationships between selected variables. In particular, I examined the associations between screen time and mental wellness, as well as between screen time and sleep duration.
 
-What I Learned
+**4. Machine Learning**
 
-Before working on this project, I mainly thought of programming as writing code to solve a problem. This project helped me see how programming can also be used to investigate questions, explore data, and test ideas.
+Developed and compared Linear Regression and Random Forest models to predict mental wellness scores. I also experimented with different combinations of input features to examine their influence on predictive performance.
 
-I learned that analyzing data involves more than producing graphs or training a model. It also requires understanding the variables, evaluating model performance, and recognizing the limitations of the results.
+**5. Model Evaluation**
 
-I would like to continue developing my skills in data analysis and machine learning and explore more questions at the intersection of data science and psychology.
+Evaluated model performance using R², Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE). I also used cross-validation to examine how consistently the models performed across different data splits.
 
-Limitations and Future Improvements
+**Results and Findings**
 
-This project has several limitations. The analysis is based on the available dataset, and the relationships found in it may not generalize to other populations. Predictive performance also does not establish causal relationships.
+The statistical analysis revealed a negative association between screen time and mental wellness scores. A simple linear regression model produced an R² value of approximately 0.404, suggesting that screen time accounted for a portion of the variation in mental wellness scores within the dataset.
 
-If I continue working on this project, I would like to explore additional ways to evaluate the models, investigate the influence of individual features, and test the analysis on suitable real-world data.
+I also examined the relationship between screen time and sleep duration. This relationship was considerably weaker, with an R² value of approximately 0.110.
 
-Project Structure
+For the prediction task, I compared Linear Regression and Random Forest models. Their test-set R² scores were approximately 0.758 and 0.745, respectively. Further cross-validation showed that the best-performing Random Forest configuration achieved an average R² of approximately 0.679, with an MAE of 9.02 and an RMSE of 11.77.
 
-The repository contains the code, analysis, and visualizations used in this project.
+These comparisons demonstrated that a more complex model does not necessarily produce better predictive results. Model selection requires consideration of both predictive performance and consistency across different data samples.
 
-Update this section to describe the actual files and folders in your repository.
+It is important to note that the findings describe associations and predictive patterns within the dataset. They do not establish causal relationships between screen time, sleep, and mental wellness.
+
+**What I Learned**
+
+This project expanded my understanding of how programming can be used beyond developing software. Through data analysis, I learned how to use code to investigate questions, identify patterns, and evaluate possible relationships between variables.
+
+I also gained practical experience with several aspects of the data science workflow, from preparing and exploring data to training and evaluating machine learning models. More importantly, I learned that interpreting results requires more than simply producing visualizations or obtaining a high model score. Understanding the data and recognizing the limitations of an analysis are equally important.
+
+I hope to continue developing my skills in data analysis and machine learning, particularly in areas where data science can contribute to a better understanding of human behavior and psychology.
+
+**Limitations and Future Improvements**
+
+This project has several limitations. The findings are dependent on the dataset used and may not generalize to other populations or circumstances. Furthermore, the predictive models identify patterns in the available data but cannot establish causal relationships.
+
+**Future improvements could include:**
+
+* Testing the analysis on additional real-world datasets.
+* Exploring feature importance and the individual contributions of different variables.
+* Experimenting with additional machine learning algorithms and evaluation techniques.
+* Investigating more closely the relationships between technology use, sleep, and other aspects of mental well-being.
+
+**Tools and Technologies**
+
+* Python — Primary programming language
+* pandas — Data manipulation and analysis
+* NumPy — Numerical operations
+* Matplotlib — Data visualization
+* scikit-learn — Statistical modeling, machine learning, and model evaluation
